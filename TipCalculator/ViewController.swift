@@ -63,16 +63,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func keyboardWasShown(_ notification: NSNotification) {
+        calculateTip()
       // 2. When notified, I want to ask iOS the size(height) of the keyboard
-      guard let info = notification.userInfo, let keyboardFrameValue = info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else { return }
+        guard let info = notification.userInfo, let keyboardFrameValue = info[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
       
       let keyboardFrame = keyboardFrameValue.cgRectValue
         let keyboardHeight = keyboardFrame.size.height
+        print(keyboardHeight)
     
       //print(keyboardHeight)
       // 3. Tell scrollview to scroll up (height)
       // there is a significant space at the bottom hence the need to multiply the keyboardHeight to 1.75
-        let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight + 300, right: 0)
+        let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight + 300 , right: 0)
       scrollView.contentInset = insets
       scrollView.scrollIndicatorInsets = insets
     }

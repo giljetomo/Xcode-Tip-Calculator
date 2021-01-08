@@ -48,7 +48,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="Nl5-go-dDw"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bill Amount                 " borderStyle="roundedRect" placeholder="Bill Amount" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vw4-CC-p5y">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Amount" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vw4-CC-p5y">
                                                 <rect key="frame" x="58.666666666666657" y="229" width="273" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="tRv-XM-UaK"/>
